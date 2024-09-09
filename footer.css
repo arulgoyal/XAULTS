@@ -1,0 +1,202 @@
+/* FOOTER CSS */
+
+.footer-contentwrap{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.footer-part1{
+    display: flex;
+    column-gap: 3rem;
+}
+.footer-part1-leftside{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.footerlogo{
+    width: 9.91675rem;
+    height: 2.12044rem;
+    flex-shrink: 0;
+}
+.footer-part1-leftside-heading1{
+    color: #D4D3EA;
+    font-size: 1.01419rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.12688rem; /* 111.111% */
+    max-width:  15.94538rem;
+}
+.footer-request-demo-container{
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    width:22rem ;
+    height: 3.1rem;
+    /* padding: 1rem; */
+    /* margin-top: 7%; */
+}
+.footer-request-demo-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-radius: 4rem;
+    border: 0.781px solid #4E4C67;
+    overflow: hidden;
+    backdrop-filter: blur(7.033019065856934px);
+    background-color: transparent;
+    padding: 0.5rem;
+    
+}
+.footer-request-demo-form input[type="email"]{
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    color: #4E4C67;
+    background-color: transparent;
+    /*  */
+    flex-shrink: 0;
+}
+.footer-request-demo-form input[type="email"]::placeholder {
+    color: #4E4C67;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.footer-request-demo-form button {
+    background-color: 
+    rgba(200, 249, 98, 1);
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:4rem;
+    transition: background-color 0.3s ease;
+    /* max-width: .38106rem; */
+    width: 7.55013rem;
+    height: 2.31006rem;
+    flex-shrink: 0;
+}
+.footer-part1-leftside-paragraph{
+    color: #4E4C67;
+    font-size: 0.9015rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.01419rem; /* 112.5% */
+    max-width: 15.94538rem;
+}
+
+.footer-part1-rightside{
+    display: flex;
+    column-gap: 2rem;
+}
+.footer-part1-rightside-box1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 1%;
+}
+.footer-rightside-headings{
+    color: #C8F962;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.62269rem */
+}
+.footer-rightside-subpoints{
+    color:  #D4D3EA;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.01419rem; /* 112.5% */
+}
+.footer-part1-rightside-box1-subbbox1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+.footer-part1-rightside-box1-subbox1-subpart{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+@media(max-width:1000px){
+     .footer-part1{
+        flex-wrap: wrap;
+        row-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media(max-width:800px){
+
+    /* FOOTER */
+    .footerlogo{
+        width: 6.91675rem;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .footer-part1-leftside-heading1{
+        font-size: 0.9rem;
+    }
+    .footer-request-demo-container{
+        width:15rem ;
+        height: 2.8rem;
+    }
+    .footer-request-demo-form input[type="email"]{
+        padding: 0;
+    }
+    .footer-request-demo-form input[type="email"]::placeholder {
+        font-size: 0.9rem;
+    }
+    .footer-request-demo-form button {
+        /* max-width: .38106rem; */
+        width: 4.25013rem;
+        height: 1.61006rem;
+        flex-shrink: 0;
+        font-size: 0.8rem;
+    }
+    .footer-part1-leftside-paragraph{
+        font-size: 0.7015rem;
+    }
+    .footer-rightside-headings{
+        font-size: 1rem;
+    }
+    .footer-rightside-subpoints{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width:450px){
+    .footer-rightside-headings{
+        font-size: 0.9rem;
+    }
+    .footer-rightside-subpoints{
+        font-size: 0.75rem;
+    }
+    .footer-request-demo-container{
+        width:15rem ;
+        height: 2.1rem;
+    }
+    .footer-request-demo-form input[type="email"]{
+        padding: 0;
+    }
+    .footer-request-demo-form input[type="email"]::placeholder {
+        font-size: 0.75rem;
+    }
+    .footer-request-demo-form button {
+        /* max-width: .38106rem; */
+        width: 4.15013rem;
+        height: 1.31006rem;
+        flex-shrink: 0;
+        font-size: 0.75rem;
+    }
+    .footer-part1-rightside{
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+}
