@@ -187,7 +187,21 @@ h1{
     .page2-subheading{
         font-size: 1.05rem;
     }
-    
+    .page2-section5-heading{
+        font-size: 2.5rem;
+    }
+    .page2-section5-logobox-heading{
+        font-size: 1.25rem;
+    }
+    .page2-section5-logobox-subheading{
+        font-size: 1rem;
+    }
+    .page2-section5-textflexbox-heading{
+        font-size: 1.2rem;
+    }
+    .page2-section5-textflexbox-subheading{
+        font-size: 1rem;
+    }
 
 }
 @media(max-width:800px){
@@ -229,7 +243,30 @@ h1{
         text-align: center;
         font-size: 1.2rem;
     }
-    
+    .page2-section5-heading{
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    .page2-section5-logobox-heading{
+        font-size: 1.6rem;
+    }
+    .page2-section5-logobox-subheading{
+        font-size: 1.2rem;
+    }
+    .page2-section5-textflexbox-heading{
+        font-size: 1.6rem;
+    }
+    .page2-section5-textflexbox-subheading{
+        font-size: 1.2rem;
+    }
+    .page2-section5-flexbox{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .page2-section5-flexbox-parts{
+        width: 100%;
+        row-gap: 2rem;
+    }
 
 }
 @media(max-width:580px){
@@ -244,9 +281,31 @@ h1{
        text-align: center;
    }
    .page2-section4-heading{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .page2-section4-subheading{
     font-size: 1rem;
 }
+.page2-section5-heading{
+    font-size: 1.8rem;
+}
+.page2-section5-logobox-heading{
+    font-size: 1.5rem;
+}
+.page2-section5-logobox-subheading{
+    font-size: 1rem;
+}
+.page2-section5-textflexbox-heading{
+    font-size: 1.5rem;
+}
+.page2-section5-textflexbox-subheading{
+    font-size: 1rem;
+}
+}
+@media(max-width:500px){
+    .page2-section5-flexbox-parts-right-logobox{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
 }
