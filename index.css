@@ -3,6 +3,10 @@
     --text-color: #F0EFFA;
     --accent-color: #C8F962;
   }
+  body, html {
+    overflow-x: hidden;
+  }
+  
 html {
     scroll-behavior: smooth;
 }
@@ -13,6 +17,7 @@ html {
 
   
 body{
+    z-index: 0;
     background: var(--color-1);
     color: var(--text-color);
     font-family: 'SF Pro Display', Arial, sans-serif;
@@ -24,6 +29,8 @@ header{
 }
 section{
     padding: 0 15%;
+    /* height: 100vh; */
+    z-index: -1;
 }
 .subsections{
     padding: 5% 15%;
@@ -41,19 +48,37 @@ section{
     row-gap: 1rem;
 }
 .landingpage-section1-heading{
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 110%; /* 5.5rem */
     text-align: center;
+    opacity: 0;
+    animation-name: landingpage-section1-heading;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+@keyframes landingpage-section1-heading{
+    0%{opacity: 0}
+  100%{opacity: 1}
 }
 .landingpage-section1-subheading{
     font-size: 2.5rem;
-    font-style: normal;
+    font-style:1 normal;
     font-weight: 400;
     line-height: 100%; /* 5.5rem */
     text-align: center;
     color: var(--accent-color);
+    opacity: 0;
+    animation-name: landingpage-section1-heading;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
 }
 .request-demo-container{
     display: flex;
@@ -65,9 +90,19 @@ section{
     height: 4rem;
     padding: 1rem;
     /* margin-top: 5%; */
+    opacity: 0;
+    animation-name: landingpage-section1-heading;
+    animation-delay: 0.75s;
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
 }
 .request-demo-form{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     border-radius: 0.78144rem;
     border: 0.781px solid rgba(240, 239, 250, 0.60);
@@ -85,7 +120,7 @@ section{
     background-color: transparent;
     font-size: 1.25rem;
     width: 35rem;
-    height: 4rem;
+    height: 2.5rem;
     border-radius: 10px 0 0 10px;
 }
 .request-demo-form input[type="email"]::placeholder {
@@ -128,18 +163,17 @@ section{
 #landingpage-section2{
     background-image: url('./assets/Xaults-mainpage-section2-bg.svg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
-  padding: 0 10%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10% 10%;
+  
 }
 .landingpage-section2-videocontainer{
-    margin: 15%;
+    /* margin: 10%; */
     border-radius: 0.42619rem;
-    border: 0.426px solid #B8B8B8;
+    /* border: 0.426px solid #B8B8B8; */
     background: #15171C;
     box-shadow: 0px 10.228px 17.047px 0px rgba(0, 0, 0, 0.17);
     width: 100%;
@@ -152,6 +186,7 @@ section{
     flex-direction: column;
     row-gap: 1rem;
     width: 100%;
+    
 }
 .landingpage-section7-gridbox-subbox{
     display: flex;
@@ -206,7 +241,7 @@ section{
     flex-direction: column;
     row-gap: 1rem;
     column-gap: 1rem;
-    width: 45%;
+    width: 70%;
 }
 .landingpage-section8-flexbox-part1-heading{
     font-size: 2.75rem;
@@ -227,7 +262,7 @@ section{
 .landingpage-section8-gridbox{
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 30%;
     row-gap: 1rem;
     align-items: center;
     justify-content: center;
@@ -240,15 +275,16 @@ section{
     justify-content: center;
     padding: 3%;
     border-radius: 0.875rem;
-    border: 1px solid var(--Misty-slate, #292F3B);
+    border: 1px solid var(--Misty-slate, #000000);
     background: #0C0C0F;
     align-items: flex-start;
     height: 100%;
-    opacity: 0.1;
+    width: 100%;
+    opacity: 100;
 }
 .landingpage-section8-gridbox-box:hover{
     transition: 0.7s;
-    opacity: 100;
+    border: 1px solid var(--Misty-slate, #292F3B);
 }
 .landingpage-section8-boxheading{
     color: #C8F962;
@@ -269,11 +305,12 @@ section{
 
 .landingpage-section9-flexbox{
     display: flex;
-    row-gap: 5rem;
-    column-gap: 5rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 .landingpage-section9-flexbox-box{
     display: flex;
@@ -281,18 +318,30 @@ section{
     row-gap: 0.75rem;
     justify-content: center;
     align-items: center;
-    width: 15%;
+    flex-basis: auto; 
+    padding: 1rem; 
+    box-sizing: border-box;
 }
 .landingpage-section9-flexbox-box-heading{
    
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 300;
     text-align: center;
     line-height: 130%; /* 1.625rem */
+    margin: 0.5rem 0; 
+}
+.landingpage-section9-flexbox-box-image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 100px; 
+    padding: 1rem;
+    
 }
 .landingpage-section9-flexbox-box-image-white{
-    background-color: white;
+    max-width: 150px;
+    
 }
 
 @media(max-width:1400px){
@@ -303,6 +352,60 @@ section{
         padding: 7% 10%;
     }
 }
+@media(max-width:1200px){
+   .landingpage-section1-heading{
+    font-size: 4rem;
+   }
+   .landingpage-section1-subheading{
+    font-size: 2rem;
+   }
+   .request-demo-form{
+    width: 30rem;
+    height: 3rem;
+   }
+   .request-demo-form input[type="email"]{
+        width: 30rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+    .request-demo-form button {
+        
+        margin: 0.28rem;
+        max-width: 4.875rem;
+        width: 100%;
+        height: 2.5rem;
+    }
+    .sections-heading{
+        font-size: 2.25rem;
+    }
+    .sections-subheading{
+        font-size: 1rem;
+    }
+
+    /* SECTION7  */
+    .landingpage-section7-boxes-heading{
+        font-size: 1.55rem;
+    }
+    .landingpage-section7-boxes-subheading{
+        font-size: 0.9rem;
+    }
+
+    /* SECTION 8 */
+    .landingpage-section8-flexbox-part1-heading{
+        font-size: 2.55rem;
+    }
+    .landingpage-section8-flexbox-part1-subheading{
+        font-size: 1.15rem;
+    }
+    .landingpage-section8-boxheading{
+        font-size: 1.4rem;
+    }
+    .landingpage-section8-boxsubheading{
+        font-size: 0.85rem;
+        
+    }
+   
+}
 @media(max-width:1100px){
 
     /* SECTION1 */
@@ -311,6 +414,12 @@ section{
     }
     .landingpage-section1-subheading{
         font-size: 2rem;
+    }
+    .sections-heading{
+        font-size: 2.0rem;
+    }
+    .sections-subheading{
+        font-size: 0.9rem;
     }
     /* SECTION1  */
     
@@ -330,9 +439,18 @@ section{
 
     /* SECTION 1 END  */
 
+     /* SECTION7  */
+     .landingpage-section7-boxes-heading{
+        font-size: 1.5rem;
+    }
+    .landingpage-section7-boxes-subheading{
+        font-size: 0.85rem;
+    }
+
     
 }
 @media(max-width:1000px){
+   
     .sections-heading{
         font-size: 2rem;
     }
@@ -345,21 +463,125 @@ section{
     }
     .sections-subheading{
         font-size: 1.25rem;
+    }
+      /* SECTION7  */
+      .landingpage-section7-boxes-heading{
+        font-size: 1.4rem;
+    }
+    .landingpage-section7-boxes-subheading{
+        font-size: 0.8rem;
+    }
+
+    /* SECTION 8 */
+    .landingpage-section8-flexbox-part1-heading{
+        font-size: 2.25rem;
+    }
+    .landingpage-section8-flexbox-part1-subheading{
+        font-size: 1rem;
+    }
+    .landingpage-section8-boxheading{
+        font-size: 1.25rem;
+    }
+    .landingpage-section8-boxsubheading{
+        font-size: 0.85rem;
+        
     }
     
     
 }
-@media(max-width:800px){
+@media(max-width:850px){
+    .sections-heading{
+        font-size: 1.75rem;
+    }
+    .sections-subheading{
+        font-size: 0.8rem;
+    }
+    .landingpage-section1-heading{
+     font-size: 3.25rem;
+    }
+    .landingpage-section1-subheading{
+     font-size: 1.5rem;
+    }
 
+    /* SECTION 8 */
+    .landingpage-section8-flexbox{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        
+    }
+    .landingpage-section8-flexbox-part1{
+        
+        width: 100%;
+    }
+    .landingpage-section8-gridbox{
+        width: 100%;
+    }
+    
+ }
+@media(max-width:800px){
+    .sections-heading{
+        font-size: 2rem;
+    }
+    .sections-subheading{
+        font-size: 1rem;
+    }
     .landingpage-section1-heading{
         font-size: 3rem;
+    }
+
+
+      /* SECTION7  */
+      .landingpage-section7-boxes-heading{
+        font-size: 1.3rem;
+    }
+    .landingpage-section7-boxes-subheading{
+        font-size: 0.75rem;
+    }
+     /* SECTION 8 */
+     .landingpage-section8-flexbox-part1-heading{
+        font-size: 2rem;
+    }
+    .landingpage-section8-flexbox-part1-subheading{
+        font-size: 1rem;
+    }
+    .landingpage-section8-boxheading{
+        font-size: 1.1rem;
+    }
+    .landingpage-section8-boxsubheading{
+        font-size: 0.85rem;
+        
     }
     
     
    
 }
+@media(max-width:725px){
+    .sections-heading{
+        font-size: 1.9rem;
+    }
+    .sections-subheading{
+        font-size: 0.9rem;
+    }
+    .landingpage-section1-heading{
+     font-size: 2.6rem;
+    }
+    .landingpage-section1-subheading{
+     font-size: 1.3rem;
+    }
+    
+ }
 
 @media(max-width:550px){
+   
+    
+    .sections-heading{
+        font-size: 1.75rem;
+        text-align: left;
+    }
+    .sections-subheading{
+        font-size: 0.9rem;
+    }
     /* SECTION1 */
     .landingpage-section1-heading{
         font-size: 2rem;
@@ -367,7 +589,69 @@ section{
     .landingpage-section1-subheading{
         font-size: 1.25rem;
     }
+
+      /* SECTION7  */
+      .landingpage-section7-boxes-heading{
+        font-size: 1.2rem;
+    }
+    .landingpage-section7-boxes-subheading{
+        font-size: 0.7rem;
+    }
+    
+    .landingpage-section7-gridbox-subbox{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .landingpage-section7-gridbox-subbob-sub{
+       width: 100%;
+    }
+
+       /* SECTION 8 */
+       .landingpage-section8-flexbox-part1-heading{
+        font-size: 1.75rem;
+    }
+    .landingpage-section8-flexbox-part1-subheading{
+        font-size: 1rem;
+    }
+    .landingpage-section8-boxheading{
+        font-size: 1.05rem;
+    }
+    .landingpage-section8-boxsubheading{
+        font-size: 0.85rem;
+        
+    }
 }
 @media(max-width:450px){
-    
+    .landingpage-section1-heading{
+        font-size: 1.75rem;
+       }
+       .landingpage-section1-subheading{
+        font-size: 1.2rem;
+       }
+       .request-demo-form{
+        width: 15rem;
+        height: 2.5rem;
+       }
+       .request-demo-form input[type="email"]{
+            width: 15rem;
+            height: 1.5rem;
+            font-size: 0.7rem;
+        }
+        .request-demo-form button {
+            
+            margin: 0.25rem;
+            max-width: 1.875rem;
+            width: 100%;
+            height: 2rem;
+        }
+
+            /* SECTION7  */
+      .landingpage-section7-boxes-heading{
+        font-size: 1rem;
+    }
+    .landingpage-section7-boxes-subheading{
+        font-size: 0.6rem;
+    }
+
+        
 }

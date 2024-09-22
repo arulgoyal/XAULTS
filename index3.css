@@ -12,54 +12,6 @@
     font-weight: 400;
     line-height: 130%; /* 1.625rem */
 }
-.page3-request-demo-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: transparent;
-    width: 28rem;
-}
-.page3-request-demo-form{
-    display: flex;
-    width: 100%;
-    border-radius: 0.78144rem;
-    border: 0.781px solid rgba(240, 239, 250, 0.60);
-    overflow: hidden;
-    backdrop-filter: blur(7.033019065856934px);
-    background-color: transparent;
-    /* z-index: -1; */
-}
-.page3-request-demo-form input[type="email"]{
-    flex-grow: 1;
-    padding: 0.75rem;
-    border: none;
-    outline: none;
-    color: var(--text-color);
-    background-color: transparent;
-    font-size: 1rem;
-    width: 28rem;
-    height: 2.5rem;
-    border-radius: 10px 0 0 10px;
-}
-.page3-request-demo-form input[type="email"]::placeholder {
-    color: #888;
-}
-.page3-request-demo-form button {
-    background-color: 
-    rgba(200, 249, 98, 1);
-    border: none;
-    padding: 0 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius:0.5rem;
-    transition: background-color 0.3s ease;
-    margin: 0.25rem;
-    max-width: 4.5rem;
-    width: 100%;
-}
 
 /* SECTION 4 */
 

@@ -49,6 +49,56 @@
     bottom: 0;
     right: 1%;
 }
+.page3-request-demo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    width: 28rem;
+}
+.page3-request-demo-form{
+    display: flex;
+    width: 100%;
+    border-radius: 0.78144rem;
+    border: 0.781px solid rgba(240, 239, 250, 0.60);
+    overflow: hidden;
+    backdrop-filter: blur(7.033019065856934px);
+    background-color: transparent;
+    /* z-index: -1; */
+}
+.page3-request-demo-form input[type="email"]{
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background-color: transparent;
+    font-size: 1rem;
+    width: 28rem;
+    height: 2.5rem;
+    border-radius: 10px 0 0 10px;
+}
+.page3-request-demo-form input[type="email"]::placeholder {
+    color: #888;
+}
+.page3-request-demo-form button {
+    background-color: 
+    rgba(200, 249, 98, 1);
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:0.5rem;
+    transition: background-color 0.3s ease;
+    margin: 0.25rem;
+    max-width: 4.5rem;
+    width: 100%;
+}
+
+
 @media(max-width:1100px){
 
     
@@ -69,6 +119,19 @@
         right: 0;
         width: 20rem;
         height: auto;
+    }
+    .page3-request-demo-container{
+        width: 20rem;
+        /* height: 2rem; */
+    }
+    .page3-request-demo-form input[type="email"]{
+        font-size: 1rem;  
+        width: 20rem;
+        height: 2rem;
+    }
+    .page3-request-demo-form button {
+        
+        max-width: 3.3rem;
     }
 }
 @media(max-width:800px){
@@ -119,6 +182,26 @@
     .footeruppersection-flexbox-part1-paragraph{
         font-size: 0.75rem;
     }
+    .page3-request-demo-container{
+        width: 15rem;
+        /* height: 2rem; */
+    }
+    .page3-request-demo-form{
+        width: 15rem;
+        height: 2.5rem;
+       }
+    .page3-request-demo-form input[type="email"]{
+        width: 15rem;
+        height: 1.5rem;
+        font-size: 0.6rem;
+        }
+    .page3-request-demo-form button {
+            
+            margin: 0.25rem;
+            max-width: 1.875rem;
+            width: 100%;
+            height: 2rem;
+        }
 }
 
 
