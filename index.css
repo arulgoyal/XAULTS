@@ -634,10 +634,10 @@ section{
 }
 @media(max-width:450px){
     .landingpage-section1-heading{
-        font-size: 1.75rem;
+        font-size: 2rem;
        }
        .landingpage-section1-subheading{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
        }
        .request-demo-form{
         width: 15rem;
