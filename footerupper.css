@@ -10,7 +10,7 @@
     flex-shrink: 0;
     position: relative;
     display: flex;
-    z-index: 1;
+    z-index: -1;
 }
 .footeruppersection-flexbox-part1{
     width: 50%;

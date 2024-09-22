@@ -34,6 +34,7 @@
     background-color: transparent;
     width:22rem ;
     height: 3.1rem;
+    z-index: -1;
     /* padding: 1rem; */
     /* margin-top: 7%; */
 }
@@ -49,6 +50,7 @@
     backdrop-filter: blur(7.033019065856934px);
     background-color: transparent;
     padding: 0.5rem;
+    z-index: -1;
     
 }
 .footer-request-demo-form input[type="email"]{
